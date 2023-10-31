@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----FONT AWESOME---->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--- CSS --->
+    <link rel="stylesheet" href="Assets/style.css" />
+    <title>Biodataku</title>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="Assets/logo.png" alt="Biodataku" srcset="" />
+      </div>
+      <div class="burger" id="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="nav-list" id="nav-list">
+        <ul>
+          <li><a href="#tentang">Tentang saya</a></li>
+          <li><a href="#biodata">Biodata</a></li>
+          <li><a href="#kemampuan">Skill</a></li>
+          <li><a href="#" class="tombol">Download CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="text">
+            <h1>
+              Hi, Aku adalah
+              <br />
+              <span class="green">Ferdinand,</span>
+              <br />
+              seorang newbie.
+            </h1>
+            <a href="#" class="tombol" id="contact">Contact Me</a>
+          </div>
+          <div class="image">
+            <img class="img" src="Assets/me.jpg" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+      <div class="content-main">
+        <!--Content-->
+        <div class="content">
+          <article class="card">
+            <h2>Tentang Saya</h2>
+            <section class="mengenai" id="tentang">
+              <p>
+                Saya adalah Rio Ferdinand, seorang mahasiswa S1-Informatika di Universitas Teknologi Digital Indonesia. Saya sangat suka bermain game, terutama game Valorant. Selain itu, saya sangat menyukai 'ngoding'. Itulah alasannya,
+                mengapa saya sangat ingin mengikuti IDcamp x KADIN ini. Selain menyukai ngoding, saya juga sangat ingin memperoleh pencapaian yang maksimal pada bootcamp ini.Untuk mendapatkan hasil yang maksimal, saya terus memaksa diri
+                saya untuk belajar 'ngoding' dengan melihat tutorial-tutorial yang sudah ada di Dicoding dan melalui Youtube. Untuk saat ini, kemampuan saya masihlah terbatas dan sangat masih dalam tingkat pemula. Hal ini dikarenakan saya
+                baru mengenal HTML, CSS, dan JavaScript saat di perkuliahan.
+              </p>
+              <img src="assets/me.jpg" alt="" />
+            </section>
+          </article>
+          <article class="card">
+            <h2>Skill</h2>
+            <section class="skill" id="kemampuan">
+              <p>
+                Untuk saat ini, saya memiliki skill yang membuat saya sedikit lebih percaya diri dengan kemampuan saya. Pertama, saya memiliki soft skill yang mumpuni. Soft skill tersebut seperti berkomunikasi yang lancar, bertanggung jawab
+                seperti menyelesaikan tugas sebelum waktu deadline dan masih banyak lagi. Dan yang kedua, saya memiliki skill dalam pemrograman. Saya telah menguasai dasar dasar dari bahasa pemrograman Java, Html, CSS, dan R. Dan sekarang
+                ini, saya masih belum puas dengan skill saya. Untuk itu saya ingin mengembangkannya lebih lagi.
+              </p>
+            </section>
+          </article>
+        </div>
+        <!--Aside-->
+        <aside>
+          <article class="card profile" id="biodata">
+            <header>
+              <h2>BIODATAKU</h2>
+              <p>Seorang Manusia Biasa Yang Sedang Berjuang</p>
+              <figure>
+                <img class="foto-profile" src="Assets/me2.jpg" />
+              </figure>
+            </header>
+            <section class="profile">
+              <table>
+                <tr>
+                  <th>Nama</th>
+                  <td>Rio Ferdinand</td>
+                </tr>
+                <tr>
+                  <th>TTL</th>
+                  <td>Sragen, 8 Agustus 2002</td>
+                </tr>
+                <tr>
+                  <th>Alamat</th>
+                  <td>Mojomulyo, Rt 03/11</td>
+                </tr>
+                <tr>
+                  <th>Jenis Kelamin</th>
+                  <td>Laki - Laki</td>
+                </tr>
+                <tr>
+                  <th>No. Wa</th>
+                  <td>082325827831</td>
+                </tr>
+              </table>
+            </section>
+          </article>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>Submission Proyek Deploy Aplikasi Profile &#169; 2023, Dicoding Academy</p>
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UC2kU8t4VP1TBWmY1j1xfBXA"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rio-ferdinand-7491b3255"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/riferdinand"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/rifer.ferdinand"><i class="fab fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const burgerMenu = document.getElementById('burger-menu');
+      const navList = document.querySelector('.nav-list ul');
+
+      burgerMenu.addEventListener('click', () => {
+        navList.classList.toggle('show-menu');
+      });
+    </script>
+  </body>
+</html>
