@@ -1,11 +1,19 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python39 # Menggunakan runtime Python versi 3.9
 
 handlers:
 - url: /Assets
-  static_dir: Assets
+  static_dir: Assets # Menyajikan semua konten dalam folder Assets
 
+- url: /(.*) # Menyajikan seluruh konten yang tidak berada di folder Assets
+  static_files: \1
+  upload: (.*)
+
+# Mengatasi permintaan ke file index.html
+- url: /
+  static_files: index.html
+  upload: index.html
+
+# Mengatur default route ke file index.html
 - url: /.*
-  static_files: Assets/index.html
-  upload: Assets/index.html
+  static_files: index.html
+  upload: index.html
