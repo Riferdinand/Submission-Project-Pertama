@@ -3,9 +3,10 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /Assets
-  static_dir: Assets
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
 
-- url: /.*
-  static_files: Assets/index.html
-  upload: Assets/index.html
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
