@@ -1,19 +1,17 @@
-runtime: python39 # Menggunakan runtime Python versi 3.9
+runtime: python39
 
 handlers:
 - url: /Assets
-  static_dir: Assets # Menyajikan semua konten dalam folder Assets
+  static_dir: Assets 
 
-- url: /(.*) # Menyajikan seluruh konten yang tidak berada di folder Assets
+- url: /(.*) 
   static_files: \1
   upload: (.*)
 
-# Mengatasi permintaan ke file index.html
 - url: /
   static_files: index.html
   upload: index.html
 
-# Mengatur default route ke file index.html
 - url: /.*
   static_files: index.html
   upload: index.html
