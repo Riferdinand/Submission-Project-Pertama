@@ -1,0 +1,11 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /Assets
+  static_dir: Assets
+
+- url: /.*
+  static_files: Assets/index.html
+  upload: Assets/index.html
